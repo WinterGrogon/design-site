@@ -314,11 +314,64 @@ li {
     background-color: #23536D;
 }
 
-.background-image {
+.photographty .background-image {
     background: url("../img/pictures/4th-section-bg.svg") center / contain no-repeat;
 
     width: 100%;
     aspect-ratio: 563 / 141;
+}
+
+/* Gallery */
+
+.gallery {
+    background-color: #ff4e68;
+}
+
+.gallery__title {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.gallery__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__image {
+    width: 50%;
+    flex-grow: 1;
+
+    opacity: 0.75;
+
+    transition: opacity .2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.gallery__image--1 {
+    order: 7;
+}
+
+.gallery__image--2 {
+    order: 6;
+}
+
+.gallery__image--3 {
+    order: 3;
+}
+
+.gallery__image--4 {
+    order: 5;
+}
+
+.gallery__image--5 {
+    order: 1;
+}
+
+.gallery__image--7 {
+    order: -1;
 }
 
 
@@ -395,15 +448,20 @@ li {
         padding-right: 0;
         flex-direction: column;
     }
-
+    
     .photography__content, 
     .photography__bg {
         width: 100%;
         height: 50dvh;
     }
-
+    
     .photography .background-image {
         display: none;
+    }
+
+    .gallery > .container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -411,7 +469,7 @@ li {
     .about__right {
         display: none;
     }
-
+    
     .background-text {
         font-size: 60px;
         padding-left: 0;
