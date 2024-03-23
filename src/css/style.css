@@ -19,7 +19,7 @@ li {
 
 .container {
     padding-left: 90px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 
     height: 100%;
     width: 100%;
@@ -374,6 +374,83 @@ li {
     order: -1;
 }
 
+/* Contact */
+.contact {
+    width: 100%;
+    height: 100dvh;
+}
+
+.contact__content {
+    display: flex;
+    height: 100%;
+}
+
+.contact__left, .contact__right {
+    /* flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 5; */
+
+    flex: 1 5 300px;
+}
+
+.contact__left {
+    background:url('../img/pictures/form-left.png') center/cover no-repeat;
+}
+
+.contact__right {
+    background:url('../img/pictures/form-right.png') center/cover no-repeat;
+}
+
+.contact__middle {
+    /* flex-grow: 3;
+    flex-shrink: 1; */
+
+    flex: 3 1 auto;
+
+    background-color: #23536d;
+
+    & > .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form__label {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.form__input, .form__select {
+    padding: 8px;
+    margin: 0 15px 30px;
+}
+
+.form__checkbox {
+    align-self: flex-start;
+    height: 25px;
+    width: 25px;
+    margin: 0 15px 30px;
+
+}
+
+.form__button {
+    color: #FFFFFF;
+    background-color: #000000;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px;
+    border: none;
+    border-radius: 0 20px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact__title {
+    padding: 50px 0;
+    text-align: right;
+}
 
 /* Анимации */
 @keyframes shake {
